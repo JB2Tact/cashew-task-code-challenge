@@ -71,16 +71,16 @@ Task B is all about ZenStack access policies. We strongly recommend spending 15-
 
 **Start here (in order):**
 
-1. **[ZenStack Access Policy Guide](https://zenstack.dev/docs/reference/zmodel-language#access-policy)** ⭐ **READ THIS FIRST**
+1. **[ZenStack Access Policy Guide](https://zenstack.dev/docs/2.x/reference/zmodel-language#access-policy)** ⭐ **READ THIS FIRST**
    - Understand `@@allow()` and `@@deny()` rules
    - Learn how `auth()` works
    - See examples of common patterns
 
-2. **[ZenStack ZModel Language Reference](https://zenstack.dev/docs/reference/zmodel-language)**
+2. **[ZenStack ZModel Language Reference](https://zenstack.dev/docs/2.x/reference/zmodel-language)**
    - Complete reference for schema syntax
    - Field types, attributes, and functions
 
-3. **[ZenStack Quick Start](https://zenstack.dev/docs/quick-start)**
+3. **[ZenStack Quick Start](https://zenstack.dev/docs/2.x/quick-start)**
    - Overview of how ZenStack enhances Prisma
 
 **Key concepts you need to understand:**
@@ -330,8 +330,9 @@ When you're done:
 1. **Commit your changes** with clear, descriptive commit messages
 2. Test your implementation using the checklists above
 3. Run `pnpm lint` and `pnpm build` to verify code quality
-4. **Push your code** to your forked repository or create a pull request
-5. **Be ready to discuss** your approach, challenges, and decisions in the interview
+4. **Push your code** to your public forked repository on GitHub
+5. **Share the link** to your forked repository as part of your submission
+6. **Be ready to discuss** your approach, challenges, and decisions in the interview
 
 **What we're looking for:**
 
