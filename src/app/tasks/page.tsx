@@ -54,7 +54,7 @@ export default async function TasksPage() {
                           </p>
                         )}
                         <div className="mt-2">
-                          <CategoryBadge />
+                          <CategoryBadge category={task.category} />
                         </div>
                       </div>
                       {task.completed && (

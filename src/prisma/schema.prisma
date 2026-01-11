@@ -4,29 +4,30 @@
 //////////////////////////////////////////////////////////////////////////////////////////////
 
 datasource db {
-  provider = "sqlite"
-  url      = "file:../dev.db"
+    provider = "sqlite"
+    url = "file:../dev.db"
 }
 
 generator client {
-  provider = "prisma-client-js"
+    provider = "prisma-client-js"
 }
 
 model User {
-  id     String  @id() @default(cuid())
-  name   String
-  email  String  @unique()
-  avatar String?
-  tasks  Task[]
+    id String @id() @default(cuid())
+    name String
+    email String @unique()
+    avatar String?
+    tasks Task[]
 }
 
 model Task {
-  id          String   @id() @default(cuid())
-  title       String
-  description String?
-  completed   Boolean  @default(false)
-  authorId    String
-  author      User     @relation(fields: [authorId], references: [id])
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt()
+    id String @id() @default(cuid())
+    title String
+    description String?
+    completed Boolean @default(false)
+    category String?
+    authorId String
+    author User @relation(fields: [authorId], references: [id])
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt()
 }
