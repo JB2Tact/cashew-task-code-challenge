@@ -16,6 +16,7 @@ type TaskCardProps = {
     title: string;
     description: string | null;
     completed: boolean;
+    category: string | null;
     createdAt: Date;
     author: {
       id: string;
@@ -71,8 +72,7 @@ export function TaskCard({ task, currentUserId }: TaskCardProps) {
                 </p>
               )}
               <div className="mt-2">
-                {/* TODO (Task C): Pass task.category as a prop to CategoryBadge */}
-                <CategoryBadge />
+                <CategoryBadge category={task.category} />
               </div>
             </div>
           </div>

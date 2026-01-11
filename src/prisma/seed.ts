@@ -71,7 +71,7 @@ async function main() {
         description: 'Check the pending PRs in the repository',
         authorId: alice.id,
         completed: false,
-        // TODO: Add category: 'Work' here
+        category: 'Work',
       },
     }),
     prisma.task.create({
@@ -80,7 +80,7 @@ async function main() {
         description: 'Add examples to the README',
         authorId: alice.id,
         completed: true,
-        // TODO: Add category: 'Work' here
+        category: 'Work',
       },
     }),
     prisma.task.create({
@@ -89,7 +89,7 @@ async function main() {
         description: 'Users are reporting login issues',
         authorId: alice.id,
         completed: false,
-        // TODO: Add category: 'Work' here
+        category: 'Work',
       },
     }),
     prisma.task.create({
@@ -98,7 +98,7 @@ async function main() {
         description: 'Create slides for the Q1 review meeting',
         authorId: alice.id,
         completed: false,
-        // TODO: Add category: 'Work' here
+        category: 'Work',
       },
     }),
     prisma.task.create({
@@ -106,7 +106,7 @@ async function main() {
         title: 'Code review for new feature',
         authorId: alice.id,
         completed: true,
-        // TODO: Add category: 'Work' here
+        category: 'Work',
       },
     }),
   ]);
@@ -120,6 +120,7 @@ async function main() {
         description: 'Create mockups for the new homepage',
         authorId: bob.id,
         completed: false,
+        category: 'Work',
       },
     }),
     prisma.task.create({
@@ -128,6 +129,7 @@ async function main() {
         description: 'Add tests for the new features',
         authorId: bob.id,
         completed: false,
+        category: 'Work',
       },
     }),
     prisma.task.create({
@@ -136,6 +138,7 @@ async function main() {
         description: 'Clean up the REST API structure',
         authorId: bob.id,
         completed: true,
+        category: 'Work',
       },
     }),
     prisma.task.create({
@@ -143,6 +146,7 @@ async function main() {
         title: 'Set up CI/CD pipeline',
         authorId: bob.id,
         completed: false,
+        category: 'Work',
       },
     }),
   ]);
@@ -156,6 +160,7 @@ async function main() {
         description: 'Analyze and optimize slow queries',
         authorId: charlie.id,
         completed: false,
+        category: 'Work',
       },
     }),
     prisma.task.create({
@@ -164,6 +169,7 @@ async function main() {
         description: 'Review application for security vulnerabilities',
         authorId: charlie.id,
         completed: false,
+        category: 'Work',
       },
     }),
     prisma.task.create({
@@ -171,6 +177,7 @@ async function main() {
         title: 'Update dependencies',
         authorId: charlie.id,
         completed: true,
+        category: 'Work',
       },
     }),
   ]);
@@ -184,6 +191,7 @@ async function main() {
         description: 'Schedule and conduct 5 user interviews',
         authorId: diana.id,
         completed: false,
+        category: 'Work',
       },
     }),
     prisma.task.create({
@@ -192,6 +200,7 @@ async function main() {
         description: 'Document key user types and their needs',
         authorId: diana.id,
         completed: true,
+        category: 'Work',
       },
     }),
     prisma.task.create({
@@ -200,6 +209,7 @@ async function main() {
         description: 'Implement WCAG 2.1 AA compliance',
         authorId: diana.id,
         completed: false,
+        category: 'Work',
       },
     }),
     prisma.task.create({
@@ -207,6 +217,7 @@ async function main() {
         title: 'Mobile responsive design',
         authorId: diana.id,
         completed: false,
+        category: 'Work',
       },
     }),
   ]);

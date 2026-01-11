@@ -22,16 +22,15 @@ model Task {
   title       String
   description String?
   completed   Boolean  @default(false)
-  // TODO (Task A): Add an optional category field here (String?)
+  category    String?
   authorId    String
   author      User     @relation(fields: [authorId], references: [id])
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
   
-  // TODO (Task B): Replace this line with proper access control rules
-  // Currently anyone can see/delete anyone's tasks - this is a security bug!
-  // Hint: Use @@allow('read', ...), @@allow('create', ...), @@allow('update', ...), @@allow('delete', ...)
-  // Hint: The auth() function gives you the current logged-in user
-  // Hint: You can check ownership with: auth() == author
-  @@allow('all', true)
+  // Access control rules: Users can only access their own tasks
+  @@allow('read', auth() == author)
+  @@allow('create', auth() != null && authorId == auth().id)
+  @@allow('update', auth() == author)
+  @@allow('delete', auth() == author)
 }

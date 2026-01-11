@@ -7,7 +7,7 @@ import { revalidatePath } from 'next/cache';
 export async function createTask(data: { 
   title: string; 
   description?: string;
-  // TODO (Task A): Add category?: string; here after adding the field to the schema
+  category?: string;
 }) {
   const db = await getEnhancedDb();
   const user = await getCurrentUser();
